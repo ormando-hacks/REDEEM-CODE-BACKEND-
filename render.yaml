@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: whatsapp-code-detector
+    env: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: CODE_MIN_LENGTH
+        value: "12"
+      - key: CODE_MAX_LENGTH
+        value: "15"
+      - key: AUTH_DIR
+        value: /var/data/auth_info_baileys
+    disk:
+      name: whatsapp-auth
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-code-detector-backend",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Personal WhatsApp code detector backend (text detection only)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18 <21"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "6.7.23",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pino": "^9.6.0"
+  }
+}
